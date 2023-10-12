@@ -33,13 +33,23 @@ new WindowJS(".popup", {
 });
 ```
 
+## Options available for Windows
+
+| Option    | Type           | Default Value | Description                                       |
+| --------- | -------------- | ------------- | ------------------------------------------------- |
+| width     | string         | "80%"         | The width of the popup. Example: "500px", "100%"  |
+| height    | string         | "500px"       | The height of the popup. Example: "500px", "100%" |
+| title     | string/boolean | false         | The title of the popup                            |
+| autoOpen  | boolean        | true          | Whether the popup should open automatically       |
+| draggable | boolean        | false         | Whether the popup should be draggable             |
+
 ## Future Updates
 
 -   [x] ~~Add support for popup sizes~~
 -   [x] ~~Add support for title~~
 -   [x] ~~Add support for auto open~~
+-   [x] Add support for dragging popups
 -   [ ] Add support for popup positions
--   [ ] Add support for dragging popups
 -   [ ] Add support for resizing popups
 -   [ ] Add support for popup animations
 -   [ ] Increase the performance of the library

@@ -39,6 +39,15 @@
         font-weight: 600;
         color: $text-color;
         border-radius: 10px 10px 0 0;
+        user-select: none;
+
+        &.draggable{
+            cursor: grab;
+
+            &:active{
+                cursor: grabbing;
+            }
+        }
 
         a.windowjs-btn-close{
             display: flex;
