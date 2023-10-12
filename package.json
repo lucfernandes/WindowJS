@@ -1,0 +1,20 @@
+{
+	"name": "windowjs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"nodemon": "nodemon index.js",
+		"gulpify": "gulp"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-uglify": "^3.0.2",
+		"sass": "^1.69.3"
+	}
+}
