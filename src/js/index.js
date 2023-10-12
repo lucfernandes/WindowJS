@@ -31,6 +31,9 @@ class windowJS {
 		// Define o height da janela a partir do objeto
 		this.height = obj.height || "500px";
 
+		// Define se o conteúdo da janela será draggable
+		this.draggable = obj.draggable || false;
+
 		this.createWindow();
 	}
 
@@ -94,6 +97,11 @@ class windowJS {
 
 		// Adiciona o botão de fechar no header
 		windowHeader.appendChild(windowCloseButton);
+
+		// Verifica se o conteúdo da janela será draggable
+		if (this.draggable) {
+			this.activeDragAndDrop(windowHeader);
+		}
 
 		// Retorna o header
 		return windowHeader;
@@ -170,5 +178,53 @@ class windowJS {
 
 		// Adiciona a classe active
 		windowJS.classList.add("active");
+	}
+
+	// Método para tornar a janela draggable
+	activeDragAndDrop(windowHeader) {
+		windowHeader.classList.add("draggable");
+
+		// Adiciona o evento de mouse down no header
+		windowHeader.addEventListener("mousedown", (e) => {
+			const windowJS = windowHeader.parentNode;
+
+			windowJS.setAttribute("data-drag", true);
+
+			// Busca a posição do mouse
+			const x = e.clientX;
+			const y = e.clientY;
+
+			// Busca a posição da janela
+			const windowX = windowJS.offsetLeft;
+			const windowY = windowJS.offsetTop;
+
+			// Calcula a diferença entre a posição do mouse e a posição da janela
+			const diffX = x - windowX;
+			const diffY = y - windowY;
+
+			// Adiciona o evento de mouse move no body
+			windowHeader.addEventListener("mousemove", (e) => {
+				if (
+					windowHeader.parentNode.getAttribute("data-drag") == "true"
+				) {
+					// Busca a posição do mouse
+					const x = e.clientX;
+					const y = e.clientY;
+
+					// Calcula a nova posição da janela
+					const newX = x - diffX;
+					const newY = y - diffY;
+
+					// Define a nova posição da janela
+					windowJS.style.left = `${newX}px`;
+					windowJS.style.top = `${newY}px`;
+				}
+			});
+		});
+
+		// Remove o evento do windowHeader
+		windowHeader.addEventListener("mouseup", () => {
+			windowHeader.parentNode.setAttribute("data-drag", false);
+		});
 	}
 }
