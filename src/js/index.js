@@ -1,4 +1,5 @@
 class windowJS {
+
 	// Método construtor
 	constructor(domIdentifier = false, obj = {}) {
 		// Valida recebeu o identificador do elemento

@@ -9,7 +9,7 @@ gulp.task("default", watch);
 
 function compilaSass() {
 	return gulp
-		.src("./src/scss/*.scss")
+		.src("./src/scss/base.scss")
 		.pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
 		.pipe(rename("windowjs-1-0-0.css"))
 		.pipe(gulp.dest("./dist"));
