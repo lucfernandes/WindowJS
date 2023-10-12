@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="../dist/windowjs-1-0-0.css" />
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			width: 100vw;
+			height: 100vh;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.btn {
+			appearance: none;
+			border: none;
+			background-color: #000;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+	<body>
+		<!-- Button -->
+		<button onclick="windowJS1.openWindow()" class="btn">
+			Open Window
+		</button>
+
+		<!-- Modal -->
+		<div id="modal">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a
+				nisi bibendum, scelerisque turpis sit amet, cursus augue. Mauris
+				eros neque, cursus in euismod eu, accumsan a mauris. Morbi
+				molestie augue vitae tortor rhoncus, et ultrices sem fringilla.
+				Vivamus eget velit augue. Suspendisse a interdum ante. Nulla id
+				posuere ante. Nullam ultrices varius tempor. Vestibulum justo
+				risus, venenatis vitae metus ut, hendrerit suscipit nisi. Cras
+				lacinia vel nisl non dictum. Nam bibendum dapibus magna
+				fermentum fringilla. Sed cursus nunc non vestibulum sagittis.
+				Aenean suscipit sit amet justo et mattis. Integer mattis blandit
+				tristique. Quisque non tellus vitae justo mollis sagittis. Donec
+				volutpat leo vitae massa venenatis, vitae rutrum tortor aliquam.
+				Proin venenatis massa augue, ac volutpat elit pretium vitae.
+				<br />
+				Ut nisl justo, bibendum id mi a, cursus dictum risus. Maecenas
+				vehicula aliquet interdum. Cras auctor ultricies lorem sit amet
+				luctus. Integer ut mi nec diam efficitur rhoncus id sed enim.
+				Donec malesuada, ipsum eleifend auctor faucibus, ante orci
+				tincidunt ante, id lacinia tortor ex nec leo. Morbi eget massa
+				sem. Duis eleifend condimentum dolor. Curabitur eget congue
+				elit. Nullam fermentum diam egestas, iaculis velit sit amet,
+				elementum libero. In hac habitasse platea dictumst. Maecenas
+				cursus non massa et pretium. Donec eu arcu vitae massa ornare
+				viverra ut eget nibh.<br />
+				<br />
+				Curabitur condimentum in purus vitae hendrerit. Quisque odio
+				turpis, suscipit quis sem quis, cursus mattis lorem. In cursus
+				augue non felis eleifend, ut elementum augue tempus. Aliquam
+				cursus, nulla et rutrum condimentum, metus mi pellentesque arcu,
+				vel cursus nisi diam vitae est. Sed vestibulum dolor eu ligula
+				sodales bibendum. Sed maximus dolor a tincidunt facilisis.
+				Vivamus justo lectus, pretium eu tincidunt et, elementum ac
+				sapien.<br />
+				<br />
+				Ut at gravida quam. In eleifend ullamcorper libero in placerat.
+				Aenean placerat lorem a leo semper laoreet. Proin at elit lacus.
+				Suspendisse potenti. Fusce dolor tellus, luctus et augue id,
+				fringilla bibendum enim. Nulla sagittis sapien magna, id
+				pulvinar arcu vestibulum eget. Nulla aliquet maximus erat nec
+				iaculis. Nulla id hendrerit dolor. Nulla ut magna vulputate,
+				vehicula mauris sit amet, mollis lorem. Donec sed nisi nec nunc
+				lobortis blandit congue et mauris. Donec mi neque, finibus ut
+				tortor quis, suscipit sagittis nisi. Maecenas eu purus
+				facilisis, sodales orci ac, consectetur erat.<br />
+				<br />
+				Etiam leo lorem, imperdiet cursus tristique ac, fringilla sed
+				mi. Etiam in sapien nec orci pellentesque porta in id libero.
+				Aliquam pretium mi ut ante molestie aliquam. Vestibulum ante
+				ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+				curae; Proin scelerisque fringilla laoreet. Nulla malesuada
+				massa sit amet ultricies consequat. Curabitur viverra odio quis
+				placerat eleifend. Quisque sagittis congue volutpat. Nam ac
+				efficitur urna, ut vulputate arcu. Nulla tincidunt interdum eros
+				ut feugiat. Phasellus dolor nulla, malesuada ac tincidunt a,
+				aliquet eget justo.<br />
+				<br />
+				Interdum et malesuada fames ac ante ipsum primis in faucibus.
+				Vestibulum vitae aliquam nisi. Nam venenatis non turpis id
+				blandit. Duis odio purus, dapibus non ullamcorper ac, pretium ac
+				odio. Maecenas vel tellus at justo ultricies pharetra id sed
+				nisl. Pellentesque in ipsum porta, pellentesque turpis eu,
+				scelerisque leo. Vestibulum et dolor metus. Etiam congue magna
+				sem. Orci varius natoque penatibus et magnis dis parturient
+				montes, nascetur ridiculus mus. Nam eu ipsum arcu. Curabitur non
+				nisl rutrum, hendrerit enim eget, pharetra sapien. Maecenas nec
+				ultrices ex. Cras scelerisque, tortor id viverra scelerisque,
+				quam turpis lobortis enim, a feugiat leo turpis quis magna.
+				Quisque justo risus, tristique sit amet euismod eget,
+				pellentesque id nisl. Vestibulum dapibus justo ut augue sodales
+				fringilla.<br />
+				<br />
+				In varius suscipit ante, sit amet suscipit lectus malesuada et.
+				Aliquam eu justo et est venenatis lobortis eu vel felis. Etiam
+				sollicitudin ligula et fringilla pulvinar. Praesent ullamcorper
+				libero ac elit mollis dictum. Morbi vitae metus dolor. Curabitur
+				aliquam pellentesque tempor. Etiam convallis odio vitae sapien
+				condimentum molestie. In ligula urna, rhoncus eget augue eu,
+				finibus consequat arcu. Aliquam porttitor tortor id lectus
+				lobortis rutrum. Donec porttitor erat lacus, vitae interdum
+				tortor tincidunt ut. Aenean auctor bibendum neque eu dapibus.<br />
+				<br />
+				Donec eu felis tempor, malesuada libero in, tincidunt nisl.
+				Donec tincidunt blandit sagittis. Nunc congue erat a purus
+				aliquet, quis sagittis mauris laoreet. Nulla facilisi. Sed
+				ullamcorper convallis dapibus. Integer vitae mollis lacus, ac
+				dignissim urna. Nullam ut dictum felis. Sed in diam eu mi
+				suscipit placerat lobortis id tortor.<br />
+				<br />
+				Nam in lobortis arcu. Nam ac pharetra ipsum. Aliquam et posuere
+				sem. Nulla accumsan at neque nec posuere. Morbi ligula ex,
+				rhoncus nec elit vel, fringilla facilisis quam. Etiam dapibus id
+				nisi in pretium. In congue odio at velit facilisis, ut
+				vestibulum eros faucibus. Suspendisse mollis finibus arcu id
+				sodales. Donec ac purus nec massa luctus dictum. Proin convallis
+				bibendum velit, sit amet sollicitudin enim malesuada non. Sed
+				vel dui pellentesque, aliquam tellus ut, blandit arcu.<br />
+				<br />
+				Praesent feugiat elit non purus convallis aliquet. Mauris vel
+				turpis ac purus vehicula aliquam. Nulla facilisi. Duis quis
+				eleifend eros. Quisque pretium ante quis sollicitudin suscipit.
+				Ut aliquet fermentum ultrices. Phasellus tristique augue eu
+				tortor volutpat iaculis. Nunc aliquam mattis sagittis.
+			</p>
+		</div>
+
+		<script src="../dist/windowjs-1-0-0.js"></script>
+		<script>
+			const windowJS1 = new windowJS("#modal", {
+				title: "WindowJS",
+			});
+		</script>
+	</body>
+</html>

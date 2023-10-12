@@ -1,5 +1,4 @@
 class windowJS {
-
 	// Método construtor
 	constructor(domIdentifier = false, obj = {}) {
 		// Valida recebeu o identificador do elemento
@@ -27,7 +26,7 @@ class windowJS {
 		this.autoOpen = obj.autoOpen || false;
 
 		// Define o width da janela a partir do objeto
-		this.width = obj.width || "100%";
+		this.width = obj.width || "80%";
 
 		// Define o height da janela a partir do objeto
 		this.height = obj.height || "500px";
@@ -162,5 +161,14 @@ class windowJS {
 
 		// retorna o conteudo
 		return windowContent;
+	}
+
+	// Método para abrir a janela
+	openWindow() {
+		// Busca a janela pelo data-id
+		const windowJS = document.querySelector(`[data-id="${this.windowId}"]`);
+
+		// Adiciona a classe active
+		windowJS.classList.add("active");
 	}
 }
