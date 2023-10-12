@@ -9,6 +9,8 @@ WindowJS is a JavaScript library that allows you to create popups in your web pa
 To use WindowJS, you must first include the WindowJS script in your HTML file. You can do this by adding the following code to your HTML file:
 
 ```html
+<!-- On head --->
+<link rel="stylesheet" href="./css/windowjs-1-0-0.css" />
 <script src="./js/windowjs-1-0-0.js"></script>
 ```
 
